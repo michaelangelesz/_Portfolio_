@@ -56,7 +56,7 @@ export const Banner = () => {
             {({ isVisible }) =>
               <div className={ isVisible ? "animate__animated animate__fadeIn" : "" }>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Mike.`} <br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Mike!`} <br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                 <p>I am a dynamic and self-motivated professional with expansive experience across operations management, production, quality control, and process optimization. I am able to skillfully mentor and empower top-performing teams. With polished communication and interpersonal skills, I easily forge relationships and rapport with diverse groups of clients and colleagues. I’m at my best in team-based, collaborative environments. Both resourceful and respected, I’m consistently recognized for my sound judgment, attention to detail, mental agility, and strong work ethic.</p>
                 <button onClick={() => console.log("connect")}>Let's Connect <ArrowRightCircle size={25} />
                 </button>

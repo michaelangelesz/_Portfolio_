@@ -4,6 +4,7 @@ import logo from "../assets/images/logo.svg"
 import navIcon1 from "../assets/images/nav-icon1.svg"
 import navIcon2 from "../assets/images/nav-icon2.svg"
 import navIcon3 from "../assets/images/nav-icon3.svg"
+import navIcon4 from "../assets/images/nav-icon4.svg"
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home")
@@ -72,10 +73,13 @@ export const NavBar = () => {
                 <img src={navIcon1} alt="LinkedIn" />
               </a>
               <a href="https://github.com/michaelangelesz">
-                <img src={navIcon2} alt="GitHub" />
+                <img src={navIcon4} alt="GitHub" />
               </a>
               <a href="https://www.instagram.com/michaelangelesz/">
                 <img src={navIcon3} alt="Instagram" />
+              </a>
+              <a href="https://www.facebook.com/Michael.m.weisphal">
+                <img src={navIcon2} alt="Facebook" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
