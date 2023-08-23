@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react"
-import { Navbar, Container, Nav } from "react-bootstrap"
+import { Navbar, Nav, Container } from "react-bootstrap"
+import logo from "../assets/images/logo.svg"
+import navIcon1 from "../assets/images/nav-icon1.svg"
+import navIcon2 from "../assets/images/nav-icon2.svg"
+import navIcon3 from "../assets/images/nav-icon3.svg"
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home")
@@ -27,7 +31,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={""} alt="logo" />
+          <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -63,15 +67,15 @@ export const NavBar = () => {
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
-            <div className="social-icons">
+            <div className="social-icon">
               <a href="https://www.linkedin.com/in/michael-m-weisphal/">
-                <img src={""} alt="Michael M. Weisphal - LinkedIn" />
+                <img src={navIcon1} alt="LinkedIn" />
               </a>
               <a href="https://github.com/michaelangelesz">
-                <img src={""} alt="GitHub a la michaelangelesz" />
+                <img src={navIcon2} alt="GitHub" />
               </a>
               <a href="https://www.instagram.com/michaelangelesz/">
-                <img src={""} alt="My Instagram, for a personal touch" />
+                <img src={navIcon3} alt="Instagram" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
