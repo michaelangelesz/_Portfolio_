@@ -99,6 +99,7 @@ p.danger {
 /* Navbar CSS */
 
 nav.navbar {
+  font-size: 18px;
   padding: 18px 0;
   position: fixed;
   width: 100%;
@@ -128,6 +129,13 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
+  font-size: 18px;
+  color: transparent !important;
+}
+
+nav.navbar .nav-link.active {
+  font-size: 18px;
+  color: transparent !important;
 }
 
 span.navbar-text {
