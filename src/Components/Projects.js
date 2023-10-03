@@ -12,14 +12,14 @@ import TrackVisibility from "react-on-screen"
 export const Projects = () => {
   const projects = [
     {
-      title: "The Movie Gallery Project",
-      description: "The Movie Gallery is a MERN full-stack web app with full CRUD functionality. Soon to add user account sign in for personal watch lists!",
+      title: "Movie Gallery",
+      description: "The Movie Gallery is a MERN full-stack web app with full CRUD functionality.",
       link: <a href="https://my-movie-gallery.onrender.com" target="_blank">Check it out!</a>,
       imgUrl: movieGallery1,
     },
     {
-      title: "REST-rant Project",
-      description: "REST-rant is a MERN full-stack web app with full CRUD functionality. Leave star ratings and comments as well as upload photos of your favorite places!",
+      title: "The REST-rant",
+      description: "REST-rant is a MERN full-stack web app with full CRUD functionality.",
       link: <a href="https://rest-rant-0nmv.onrender.com/" target="_blank">Check it out!</a>,
       imgUrl: restRant1,
     },
@@ -30,13 +30,13 @@ export const Projects = () => {
       imgUrl: memoryTarot,
     },
     {
-      title: "The Movie Gallery Project",
+      title: "Movie Gallery",
       description: "Team developed in an agile environment.",
       link: <a href="https://github.com/michaelangelesz/Movie-Gallery" target="_blank">Check the repo!</a>,
       imgUrl: movieGallery2,
     },
     {
-      title: "REST-rant Project",
+      title: "The REST-rant",
       description: "My first full-stack web app development.",
       link: <a href="https://github.com/michaelangelesz/project-REST-rant" target="_blank">Check the repo!</a>,
       imgUrl: restRant2,
