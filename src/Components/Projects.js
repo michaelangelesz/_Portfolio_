@@ -1,44 +1,50 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap"
 import { ProjectCard } from "./ProjectCard"
-import memoryAlbums from "../assets/images/memoryAlbums.png"
-import memoryTarot from "../assets/images/memoryTarot.png"
+import movieGallery1 from "../assets/images/mg-welcome-page.png"
+import movieGallery2 from "../assets/images/mg-gallery.png"
 import restRant1 from "../assets/images/restRant1.png"
 import restRant2 from "../assets/images/restRant2.png"
-import restRant3 from "../assets/images/restRant3.png"
-import restRant4 from "../assets/images/restRant4.png"
-import colorSharp2 from "../assets/images/color-sharp2.png"
+import memoryAlbums from "../assets/images/memoryAlbums.png"
+import memoryTarot from "../assets/images/memoryTarot.png"
+import background from "../assets/images/stars-bg.jpeg"
 import TrackVisibility from "react-on-screen"
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "The Movie Gallery Project",
+      description: "The Movie Gallery is a MERN full-stack web app with full CRUD functionality. Soon to add user account sign in for personal watch lists!",
+      link: <a href="https://my-movie-gallery.onrender.com" target="_blank">Check it out!</a>,
+      imgUrl: movieGallery1,
+    },
+    {
+      title: "REST-rant Project",
+      description: "REST-rant is a MERN full-stack web app with full CRUD functionality. Leave star ratings and comments as well as upload photos of your favorite places!",
+      link: <a href="https://rest-rant-0nmv.onrender.com/" target="_blank">Check it out!</a>,
       imgUrl: restRant1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: restRant2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Memory Tarot",
+      description: "Milestone Project 1 for ThriveDX. How are your memory skills?",
+      link: <a href="https://michaelangelesz.github.io/Memory-Game/" target="_blank">Play now!</a>,
       imgUrl: memoryTarot,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: restRant3,
+      title: "The Movie Gallery Project",
+      description: "Team developed in an agile environment.",
+      link: <a href="https://github.com/michaelangelesz/Movie-Gallery" target="_blank">Check the repo!</a>,
+      imgUrl: movieGallery2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: restRant4,
+      title: "REST-rant Project",
+      description: "My first full-stack web app development.",
+      link: <a href="https://github.com/michaelangelesz/project-REST-rant" target="_blank">Check the repo!</a>,
+      imgUrl: restRant2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Memory Albums",
+      description: "Another fun version of the Memory Tarot game!",
+      link: <a href="https://michaelangelesz.github.io/Memory-Albums/" target="_blank">Play now!</a>,
       imgUrl: memoryAlbums,
     },
   ]
@@ -120,7 +126,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={background}></img>
     </section>
   )
 }
