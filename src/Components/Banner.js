@@ -77,7 +77,7 @@ export const Banner = () => {
                   </h2>
                   <p>
                     Quality Assurance | Software Developer | Data Analyst |
-                    Project Manager | Perfectionist | Problem Solver | Leader 
+                    Project Manager | Perfectionist | Beauty Enthusiast | Problem Solver | Leader 
                   </p>
                   <p>
                     Let's start designing your website today!
