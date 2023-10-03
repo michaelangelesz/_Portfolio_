@@ -68,13 +68,13 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/michael-m-weisphal/">
+              <a href="https://www.linkedin.com/in/michael-m-weisphal/" target="_blank">
                 <img src={navIcon1} alt="LinkedIn" />
               </a>
-              <a href="https://github.com/michaelangelesz">
+              <a href="https://github.com/michaelangelesz" target="_blank">
                 <img src={navIcon4} alt="GitHub" />
               </a>
-              <a href="https://www.instagram.com/michaelangelesz/">
+              <a href="https://www.instagram.com/michaelangelesz/" target="_blank">
                 <img src={navIcon3} alt="Instagram" />
               </a>
             </div>
