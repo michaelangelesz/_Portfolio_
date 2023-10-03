@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import headerImg from "../assets/images/header-img.svg"
+import headerImg from "../assets/images/me.jpeg"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
@@ -63,28 +63,29 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">WebDesigns by Mike</span>
+                  <span className="tagline">✦ WebDesigns by Mike ✦</span>
                   <h1>
                     {`Hi! I'm Mike!`} <br />
-                    </h1>
-                    <h2>
-                    {`Full Stack Web Development and Web Design`}<br />
+                  </h1>
+                  <h2>
+                    {`Modern Web Design`}
+                    <br />
                     {`UX/UI Design Specialist`}
-                    </h2>
-                    {/* <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span> */}
+                    <br />
+                    {`Full Stack Web Developer`}
+                    <br />
+                  </h2>
                   <p>
                     Quality Assurance | Software Developer | Data Analyst |
-                    Project Manager | Leader
+                    Project Manager | Perfectionist | Problem Solver | Leader 
+                  </p>
+                  <p>
+                    Let's start designing your website today!
                   </p>
                   <button>
                     Let's Connect <ArrowRightCircle size={25} />
                   </button>
+                  <br />
                 </div>
               )}
             </TrackVisibility>

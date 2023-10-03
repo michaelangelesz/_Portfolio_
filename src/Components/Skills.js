@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel"
 import meter1 from "../assets/images/meter1.svg"
 import meter2 from "../assets/images/meter2.svg"
 import meter3 from "../assets/images/meter3.svg"
-import colorSharp from "../assets/images/color-sharp.png"
+import colorSharp from "../assets/images/stars-bg.jpeg"
 import "react-multi-carousel/lib/styles.css"
 
 export const Skills = () => {
@@ -55,16 +55,16 @@ export const Skills = () => {
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
+                  <img src={meter1} alt="spanish" />
+                  <h5>Spanish</h5>
+                </div>
+                <div className="item">
                   <img src={meter2} alt="brand identity" />
                   <h5>Brand Identity</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="logo design" />
                   <h5>Logo Design</h5>
-                </div>
-                <div className="item">
-                  <img src={meter1} alt="spanish" />
-                  <h5>Spanish</h5>
                 </div>
               </Carousel>
             </div>

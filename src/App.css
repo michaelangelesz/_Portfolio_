@@ -130,12 +130,11 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
   font-size: 18px;
-  color: transparent !important;
+  color: #121212 !important;
 }
 
 nav.navbar .nav-link.active {
   font-size: 18px;
-  color: transparent !important;
 }
 
 span.navbar-text {
@@ -282,11 +281,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 160px 0 100px 0;
-  background-image: url('./assets/images/banner-bg.png');
+  padding: 177px 0 100px 0;
+  background-image: url('https://i1.sndcdn.com/artworks-o52bMJXN1mKgFng4-jO85aw-t500x500.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    padding: 260px 0 100px 0;
+  }
 }
 
 .banner .tagline {
@@ -339,21 +344,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner img {
-  animation: updown 3s linear infinite;
-}
-
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(20px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
+  width: 77%;
+  height: auto;
+  margin-left: 3em;
+  border-radius: 2em;
 }
 
 .txt-rotate>.wrap {
@@ -400,10 +394,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .background-image-left {
-  top: 28%;
+  /* top: 28%; */
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 100%;
   z-index: -4;
 }
 
@@ -499,6 +493,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 24px;
 }
 
+.proj-imgbx a {
+  color:rgba(255, 255, 255, 1);
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -544,10 +542,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .background-image-right {
-  top: 20%;
+  top: 46%;
   position: absolute;
   bottom: 0;
-  width: 35%;
+  width: 100%;
+  height: auto;
   right: 0;
   z-index: -4;
 }

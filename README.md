@@ -1,3 +1,6 @@
+This portfolio was assembled by following [this tutorial](https://youtu.be/hYv6BM2fWd8?si=4h57oLUZ-mbSAMv-)
+Stars background [source](https://soundcloud.com/trapkittybeatz/lofi-dark-trap)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
