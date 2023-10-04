@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap"
 import headerImg from "../assets/images/me.jpeg"
+import linkedIn from "../assets/images/nav-icon-linkedin.svg"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
 
@@ -35,7 +36,7 @@ export const Banner = () => {
                   <p>
                     Let's start designing your website today!
                   </p>
-                  <br />
+                  <a href = 'https://www.linkedin.com/in/michael-m-weisphal/'>LinkedIn</a>
                 </div>
               )}
             </TrackVisibility>
