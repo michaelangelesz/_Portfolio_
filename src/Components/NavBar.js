@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Navbar, Nav, Container } from "react-bootstrap"
-import logo from "../assets/images/logo.svg"
+import logo from "../assets/images/logo-lion.png"
 import linkedIn from "../assets/images/nav-icon-linkedin.svg"
 import instagram from "../assets/images/nav-icon-instagram.svg"
 import github from "../assets/images/nav-icon-github.svg"
@@ -65,6 +65,15 @@ export const NavBar = () => {
             >
               Projects
             </Nav.Link>
+            <Nav.Link
+              href="#contact"
+              className={
+                activeLink === "contact" ? "active-navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("contact")}
+            >
+              Contact
+            </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
@@ -78,9 +87,6 @@ export const NavBar = () => {
                 <img src={instagram} alt="Instagram" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
-            </button>
           </span>
         </Navbar.Collapse>
       </Container>
