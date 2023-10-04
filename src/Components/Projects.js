@@ -7,7 +7,6 @@ import restRant2 from "../assets/images/restRant2.png"
 import memoryAlbums from "../assets/images/memoryAlbums.png"
 import memoryTarot from "../assets/images/memoryTarot.png"
 import background from "../assets/images/stars-bg.jpeg"
-import TrackVisibility from "react-on-screen"
 
 export const Projects = () => {
   const projects = [
@@ -54,13 +53,7 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div>
                   <h2>Projects</h2>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -85,12 +78,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="third">Lorem Ipsum 2</Nav.Link>
                       </Nav.Item>
                     </Nav>
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
+                    <Tab.Content>
                       <Tab.Pane eventKey="first">
                         Some fun projects I did in class! <br />
                         <br />
@@ -121,8 +109,6 @@ export const Projects = () => {
                     </Tab.Content>
                   </Tab.Container>
                 </div>
-              )}
-            </TrackVisibility>
           </Col>
         </Row>
       </Container>
