@@ -129,6 +129,21 @@ export const Contact = () => {
                 </div>
           </Col>
         </Row>
+        <Row className="align-items-center dm-contact">
+        <hr /><br /><br />
+          <Col xs={12} md={4}>
+            <h3>Address</h3>
+            <p>Raleigh, NC</p>
+          </Col>
+          <Col xs={12} md={4}>
+            <h3>Phone</h3>
+            <p>Text/Mobile: 706-313-0402</p>
+          </Col>
+          <Col xs={12} md={4}>
+            <h3>Email</h3>
+            <p>mmweisphal@gmail.com</p>
+          </Col>
+        </Row>
       </Container>
     </section>
   )

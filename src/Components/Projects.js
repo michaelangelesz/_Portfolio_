@@ -17,10 +17,10 @@ export const Projects = () => {
       imgUrl: movieGallery1,
     },
     {
-      title: "The REST-rant",
-      description: "REST-rant is a MERN full-stack web app with full CRUD functionality.",
-      link: <a href="https://rest-rant-0nmv.onrender.com/" target="_blank">Check it out!</a>,
-      imgUrl: restRant1,
+      title: "Movie Gallery",
+      description: "Team developed in an agile environment.",
+      link: <a href="https://github.com/michaelangelesz/Movie-Gallery" target="_blank">Check the repo!</a>,
+      imgUrl: movieGallery2,
     },
     {
       title: "Memory Tarot",
@@ -29,10 +29,10 @@ export const Projects = () => {
       imgUrl: memoryTarot,
     },
     {
-      title: "Movie Gallery",
-      description: "Team developed in an agile environment.",
-      link: <a href="https://github.com/michaelangelesz/Movie-Gallery" target="_blank">Check the repo!</a>,
-      imgUrl: movieGallery2,
+      title: "The REST-rant",
+      description: "REST-rant is a MERN full-stack web app with full CRUD functionality.",
+      link: <a href="https://rest-rant-0nmv.onrender.com/" target="_blank">Check it out!</a>,
+      imgUrl: restRant1,
     },
     {
       title: "The REST-rant",
