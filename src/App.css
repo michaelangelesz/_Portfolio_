@@ -36,6 +36,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   background-image: url('./assets/images/background.avif');
+  background-size: cover;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -571,12 +572,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 40px 0;
+}
+
+.contact-form {
   text-align: center;
 }
 
 .contact img {
   width: 88%;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .contact h2 {
@@ -626,6 +630,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
+  margin-bottom: 25px;
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -656,8 +661,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
-.contact .dm-contact {
-  margin-top: 2em;
+.dm-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* Footer CSS */
