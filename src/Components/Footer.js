@@ -1,9 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap"
 import logo from "../assets/images/logo.svg"
-import navIcon1 from "../assets/images/nav-icon1.svg"
-import navIcon2 from "../assets/images/nav-icon2.svg"
-import navIcon3 from "../assets/images/nav-icon3.svg"
-import navIcon4 from "../assets/images/nav-icon4.svg"
+import linkedIn from "../assets/images/nav-icon-linkedin.svg"
+import instagram from "../assets/images/nav-icon-instagram.svg"
+import github from "../assets/images/nav-icon-github.svg"
 
 export const Footer = () => {
   return (
@@ -15,14 +14,13 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
-              <a href="#"><img src={navIcon4} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/michael-m-weisphal/"><img src={linkedIn} alt="Icon" /></a>
+              <a href="https://github.com/michaelangelesz"><img src={github} alt="Icon" /></a>
+              <a href="https://www.instagram.com/michaelangelesz/"><img src={instagram} alt="Icon" /></a>
             </div>
             <p className="copyright">
-                Copyright Michael M. Weisphal 2020-
-                {new Date().getFullYear()}
+            ✦ WebDesigns by Mike ✦ 2020-
+                {new Date().getFullYear()} ✦
             </p>
           </Col>
         </Row>
