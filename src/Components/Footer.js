@@ -19,7 +19,6 @@ export const Footer = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/michael-m-weisphal/"><img src={linkedIn} alt="Icon" /></a>
               <a href="https://github.com/michaelangelesz"><img src={github} alt="Icon" /></a>
-              <a href="https://www.instagram.com/michaelangelesz/"><img src={instagram} alt="Icon" /></a>
             </div>
             <p className="copyright">
             Mike M. Weisphal © 2020-
