@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import TrackVisibility from "react-on-screen"
-import contactImg from "../assets/images/contact-img.svg"
+import contactImg from "../assets/images/contact-img.jpg"
 import "animate.css"
 
 export const Contact = () => {
@@ -47,30 +46,17 @@ export const Contact = () => {
   }
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) => (
                 <img
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
                   src={contactImg}
                   alt="Contact Us"
                 />
-              )}
-            </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div className="contact-form">
                   <h2>Get In Touch</h2>
                   <form onSubmit={handleSubmit}>
                     <Row>
@@ -141,8 +127,6 @@ export const Contact = () => {
                     </Row>
                   </form>
                 </div>
-              )}
-            </TrackVisibility>
           </Col>
         </Row>
       </Container>
