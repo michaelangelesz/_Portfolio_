@@ -136,8 +136,8 @@ export const Contact = () => {
             <p>Raleigh, NC</p>
           </Col>
           <Col xs={12} md={4}>
-            <h3>Phone</h3>
-            <p>Text/Mobile: 706-313-0402</p>
+            <h3>Text/Mobile</h3>
+            <p>706-313-0402</p>
           </Col>
           <Col xs={12} md={4}>
             <h3>Email</h3>
