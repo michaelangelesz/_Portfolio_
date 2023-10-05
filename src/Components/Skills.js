@@ -32,17 +32,11 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
+
               <p>
-                I am a dynamic and self-motivated professional with expansive
-                experience across operations management, production, quality
-                control, and process optimization. I am able to skillfully
-                mentor and empower top-performing teams. With polished
-                communication and interpersonal skills, I easily forge
-                relationships and rapport with diverse groups of clients and
-                colleagues. I’m at my best in team-based, collaborative
-                environments. Both resourceful and respected, I’m consistently
-                recognized for my sound judgment, attention to detail, mental
-                agility, and strong work ethic.
+                Programming enthusiast with a natural aptitude for absorbing new technologies.<br />
+                Quality Assurance | Hablo español | Software Developer | Data
+                Analyst | Problem Solver | Project Manager | Leader
               </p>
               <Carousel
                 responsive={responsive}

@@ -10,7 +10,7 @@ export const Banner = () => {
                 <div>
                   <span className="tagline">✦ WebDesigns by Mike ✦</span>
                   <h1>
-                    {`Hey! I'm Mike`} <br />
+                    {`Hey there! I'm Mike`} <br />
                   </h1>
                   <h2>
                     {`Modern Web Design`}
@@ -19,14 +19,13 @@ export const Banner = () => {
                     <br />
                     {`Full Stack Web Developer`}
                     <br />
-                  </h2>
-                  <p>
-                    Quality Assurance | Software Developer | Data Analyst |
-                    Problem Solver | Project Manager | Leader 
+                  </h2><br />
+                  <p>Passion for making products that are not only functional, but beautiful.
                   </p>
                   <p>
                     Let's start designing your website today!
                   </p>
+                  <br />
                   <a href = 'https://www.linkedin.com/in/michael-m-weisphal/'>LinkedIn</a>
                 </div>
           </Col>
