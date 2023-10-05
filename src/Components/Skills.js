@@ -34,7 +34,7 @@ export const Skills = () => {
               <h2>Skills</h2>
 
               <p>
-                Programming enthusiast with a natural aptitude for absorbing new technologies.<br />
+                Programming enthusiast with a natural aptitude for absorbing new technologies.<br /><br />
                 Quality Assurance | Hablo español | Software Developer | Data
                 Analyst | Problem Solver | Project Manager | Leader
               </p>
