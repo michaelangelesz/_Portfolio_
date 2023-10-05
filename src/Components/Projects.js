@@ -72,7 +72,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="first">Class Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Lorem Ipsum 1</Nav.Link>
+                        <Nav.Link eventKey="second">Hobbies & Interests</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Lorem Ipsum 2</Nav.Link>
