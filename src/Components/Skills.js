@@ -36,9 +36,9 @@ export const Skills = () => {
               <p>
                 Programming enthusiast with a natural aptitude for absorbing new technologies.<br /><br />
                 Software Developer | Quality Assurance | Data
-                Analyst | Project Manager | Problem Solver | Leader
+                Analyst | Project Manager | Problem Solver | Leader<br /><br />
+                ¡Hablame en español!
                 </p>
-                <h4>¡Hablame en español!</h4>
               </div>
                 <Carousel
                 responsive={responsive}
