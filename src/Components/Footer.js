@@ -1,7 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/images/logo-lion.png"
 import linkedIn from "../assets/images/nav-icon-linkedin.svg"
-import instagram from "../assets/images/nav-icon-instagram.svg"
 import github from "../assets/images/nav-icon-github.svg"
 
 export const Footer = () => {
