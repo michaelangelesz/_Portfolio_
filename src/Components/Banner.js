@@ -20,7 +20,7 @@ export const Banner = () => {
                     {`Full Stack Web Developer`}
                     <br />
                   </h2><br />
-                  <p>Passion for making products that are not only functional, but beautiful.
+                  <p>Passion for creating spaces that are not only functional, but beautiful.
                   </p>
                   <p>
                     Let's start designing your website today!
