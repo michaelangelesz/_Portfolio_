@@ -26,8 +26,7 @@ export const Banner = () => {
                     Let's start designing your website today!
                   </p>
                   <br />
-                  <button type="button" onClick={() => window.open('https://www.linkedin.com/in/michael-m-weisphal/')}>LinkedIn</button><br /><br />
-                  <button type="button" onClick={() => window.open('https://github.com/michaelangelesz')}>Github</button>
+                  <button type="button" onClick={() => window.open('https://www.linkedin.com/in/michael-m-weisphal/')}>LinkedIn</button>
                 </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
