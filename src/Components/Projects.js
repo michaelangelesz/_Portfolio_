@@ -6,7 +6,6 @@ import restRant1 from "../assets/images/restRant1.png"
 import restRant2 from "../assets/images/restRant2.png"
 import memoryAlbums from "../assets/images/memoryAlbums.png"
 import memoryTarot from "../assets/images/memoryTarot.png"
-import background from "../assets/images/background.avif"
 
 export const Projects = () => {
   const projects = [
