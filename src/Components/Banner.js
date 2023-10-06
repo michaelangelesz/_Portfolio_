@@ -13,11 +13,11 @@ export const Banner = () => {
                     {`Hey there! I'm Mike`} <br />
                   </h1>
                   <h2>
-                    {`Modern Web Design`}
+                    {`Full Stack Web Developer`}
                     <br />
                     {`UX/UI Design Specialist`}
                     <br />
-                    {`Full Stack Web Developer`}
+                    {`Modern Web Design`}
                     <br />
                   </h2><br />
                   <p>Passion for creating spaces that are not only functional, but beautiful.
