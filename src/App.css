@@ -351,7 +351,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Skills CSS */
 
 .skill {
-  padding: 0 0 50px 0;
+  margin-top: 2.5em;
   position: relative;
 }
 
@@ -395,19 +395,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Projects CSS */
-.project {
-  padding: 80px 0;
+.projects {
+  margin-top: 3.5em;
   position: relative;
-  background-color: black;
 }
 
-.project h2 {
+.projects h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: .7em;
 }
 
-.project p {
+.projects h3 {
+  font-size: 30px;
+  text-align: center; 
+  letter-spacing: 0.8px;
+}
+
+.projects p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -548,6 +554,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 40px 0;
+  margin-top: 2.5em;
 }
 
 .contact-form {
