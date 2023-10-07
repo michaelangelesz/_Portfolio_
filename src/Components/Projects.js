@@ -111,8 +111,7 @@ export const Projects = () => {
                 </Nav>
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
-                    <h3>Some fun projects I did in class!</h3> <br />
-                    <br />
+                    <h3>Some fun projects I did in class!</h3><br />
                     <Row>
                       {projects.map((project, index) => {
                         return <ProjectCard key={index} {...project} />
