@@ -83,6 +83,9 @@ export const NavBar = () => {
               <a href="https://github.com/michaelangelesz" target="_blank">
                 <img src={github} alt="GitHub" />
               </a>
+              <a href="https://instagram.com/michaelangelesz" target="_blank">
+                <img src={instagram} alt="GitHub" />
+              </a>
             </div>
           </span>
         </Navbar.Collapse>
