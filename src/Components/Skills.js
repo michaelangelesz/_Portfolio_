@@ -33,14 +33,19 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <div>
-              <p>
-                Programming enthusiast with a natural aptitude for absorbing new technologies.<br /><br />
-                Software Developer | Quality Assurance | Data
-                Analyst | Project Manager | Problem Solver | Leader<br /><br />
-                ¡Hablame en español!
+                <p>
+                  Programming enthusiast with a natural aptitude for absorbing
+                  new technologies.
+                  <br />
+                  <br />
+                  Software Developer | Quality Assurance | Data Analyst |
+                  Project Manager | Problem Solver | Leader
+                  <br />
+                  <br />
+                  ¡Hablame en español!
                 </p>
               </div>
-                <Carousel
+              <Carousel
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
@@ -50,15 +55,15 @@ export const Skills = () => {
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="spanish" />
+                  <img src={meter3} alt="spanish" />
                   <h5>Spanish</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="brand identity" />
+                  <img src={meter1} alt="brand identity" />
                   <h5>Brand Identity</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="logo design" />
+                  <img src={meter2} alt="logo design" />
                   <h5>Logo Design</h5>
                 </div>
               </Carousel>
