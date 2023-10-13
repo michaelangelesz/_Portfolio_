@@ -17,11 +17,8 @@ export const Footer = () => {
           </Col>
           <Col xs={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/michael-m-weisphal/"><img src={linkedIn} alt="Icon" /></a>
-              <a href="https://github.com/michaelangelesz"><img src={github} alt="Icon" /></a>
-              <a href="https://instagram.com/michaelangelesz" target="_blank">
-                <img src={instagram} alt="GitHub" />
-              </a>
+              <a href="https://www.linkedin.com/in/michael-m-weisphal/"><img src={linkedIn} alt="LinkedIn" /></a>
+              <a href="https://github.com/michaelangelesz"><img src={github} alt="Github" /></a>
             </div>
             <p className="copyright">
             Mike M. Weisphal © 2020-
