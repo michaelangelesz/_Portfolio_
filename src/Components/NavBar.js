@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Navbar, Nav, Container } from "react-bootstrap"
 import logo from "../assets/images/logo-lion.png"
 import linkedIn from "../assets/images/nav-icon-linkedin.svg"
-import instagram from "../assets/images/nav-icon-instagram.svg"
+import discord from "../assets/images/nav-icon-discord.svg"
 import github from "../assets/images/nav-icon-github.svg"
 
 export const NavBar = () => {
@@ -77,11 +77,20 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/michael-m-weisphal/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/michael-m-weisphal/"
+                target="_blank"
+              >
                 <img src={linkedIn} alt="LinkedIn" />
               </a>
               <a href="https://github.com/michaelangelesz" target="_blank">
                 <img src={github} alt="Github" />
+              </a>
+              <a
+                href="https://discord.com/users/927145683662811157"
+                target="_blank"
+              >
+                <img src={discord} alt="Discord" />
               </a>
             </div>
           </span>

@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/images/logo-lion.png"
 import linkedIn from "../assets/images/nav-icon-linkedin.svg"
 import github from "../assets/images/nav-icon-github.svg"
-import instagram from "../assets/images/nav-icon-instagram.svg"
+import discord from "../assets/images/nav-icon-discord.svg"
 
 export const Footer = () => {
   return (
@@ -19,6 +19,9 @@ export const Footer = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/michael-m-weisphal/"><img src={linkedIn} alt="LinkedIn" /></a>
               <a href="https://github.com/michaelangelesz"><img src={github} alt="Github" /></a>
+              <a href="https://discord.com/users/927145683662811157" target="_blank">
+                <img src={discord} alt="Discord" />
+              </a>
             </div>
             <p className="copyright">
             Mike M. Weisphal © 2020-
