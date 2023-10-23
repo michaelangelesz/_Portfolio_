@@ -77,13 +77,13 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/michael-m-weisphal/" target="_blank">
+              <a href="https://www.linkedin.com/in/michael-m-weisphal/" target="_blank" rel="noreferrer">
                 <img src={linkedIn} alt="LinkedIn" />
               </a>
-              <a href="https://github.com/michaelangelesz" target="_blank">
+              <a href="https://github.com/michaelangelesz" target="_blank" rel="noreferrer">
                 <img src={github} alt="Github" />
               </a>
-              <a href="https://discord.com/users/927145683662811157" target="_blank">
+              <a href="https://discord.com/users/927145683662811157" target="_blank" rel="noreferrer">
                 <img src={discord} alt="Discord" />
               </a>
             </div>
