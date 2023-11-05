@@ -38,11 +38,18 @@ export const Skills = () => {
                   new technologies.
                   <br />
                   <br />
-                  Software Developer | Quality Assurance | Data Analyst |
-                  Project Manager | Problem Solver | Leader
+                  Full Stack Software Development <br />
+                  Mac and Windows Proficient <br />
+                  Project Manager <br />
+                  Quality Assurance <br />
+                  Data Analyst <br />
+                  Detail Oriented <br />
+                  User Friendly <br />
+                  Problem Solver <br />
+                  Solution Finder
                   <br />
                   <br />
-                  ¡Hablame en español!
+                  ¡Hablame en Español!
                 </p>
               </div>
               <Carousel
