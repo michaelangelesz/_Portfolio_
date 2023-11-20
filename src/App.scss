@@ -23,8 +23,7 @@
 /* Default CSS */
 
 * {
-  margin: 0;
-  padding: 0;
+  @include margin-padding;
   box-sizing: border-box;
 }
 
@@ -39,7 +38,7 @@ body {
   @include background-properties;
   color: $white !important;
   font-family: $font-family, sans-serif !important;
-  /* scrollbar-width: none;  */
+  // scrollbar-width: none;
 
   h1,
   h2,
@@ -47,8 +46,7 @@ body {
   h4,
   h5,
   h6 {
-    margin: 0;
-    padding: 0;
+    @include margin-padding;
     line-height: normal;
   }
 
@@ -63,18 +61,17 @@ body {
   li,
   button,
   ul {
-    margin: 0;
-    padding: 0;
+    @include margin-padding;
     line-height: normal;
-    text-decoration: none;
+    @include no-text-decoration;;
   }
 
   a:hover {
-    text-decoration: none;
+    @include no-text-decoration;;
   }
 
   img {
-    width: 100%;
+    @include full-width;
     height: auto;
   }
 
@@ -111,7 +108,13 @@ body {
 
 /* Navbar CSS */
 nav.navbar {
-  @include nav-properties;
+  font-size: $font-size-small;
+  padding: 18px 0;
+  position: fixed;
+  @include full-width;
+  top: 0;
+  z-index: 9999;
+  transition: $transition-ease;
 
   &.scrolled {
     padding: 0px 0;
@@ -124,17 +127,85 @@ nav.navbar {
 
   .navbar-nav {
     .nav-link.navbar-link {
-      @include nav-link-properties;
+      font-weight: $font-weight-book;
+      color: $white !important;
+      letter-spacing: $letter-spacing-default;
+      padding: 0 25px;
+      font-size: $font-size-small;
+      opacity: 0.75;
+    
+      &:hover,
+      &.active {
+        opacity: 1;
+        font-size: $font-size-small;
+        color: $background-color !important;
+      }
     }
 
     .nav-link.active {
-      font-size: 18px;
+      font-size: $font-size-small;
       color: $background-color !important;
     }
   }
 
   .navbar-toggler {
-    @include nav-toggler-properties;
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  
+    span.navbar-toggler-icon {
+      width: 24px;
+      height: 17px;
+      color: $white !important;
+      background-image: none;
+      position: relative;
+      border-bottom: 2px solid $text-grey;
+      transition: $toggler-transition;
+      top: -2px;
+  
+      &:focus {
+        border-bottom: 2px solid $text-grey;
+      }
+  
+      &:after,
+      &:before {
+        width: 24px;
+        position: absolute;
+        height: 2px;
+        background-color: $text-grey;
+        top: 0;
+        left: 0;
+        content: "";
+        z-index: 2;
+        transition: $toggler-transition;
+      }
+  
+      &:after {
+        top: 8px;
+      }
+    }
+  
+    &[aria-expanded="true"] {
+      .navbar-toggler-icon {
+        &:after {
+          transform: rotate(45deg);
+          background-color: $text-grey;
+          height: 2px;
+        }
+  
+        &:before {
+          transform: translateY(8px) rotate(-45deg);
+          background-color: $text-grey;
+          height: 2px;
+        }
+  
+        & {
+          border-color: transparent;
+        }
+      }
+    }
   }
 }
 
@@ -145,7 +216,46 @@ span.navbar-text {
 
 /* Social Icons CSS */
 .social-icon {
-  @include social-icon-properties;
+  display: inline-block;
+  margin-left: 14px;
+
+  a {
+    width: 42px;
+    height: 42px;
+    background: $social-icon-background-color;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: $border-light;
+
+    &::before {
+      content: "";
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      background-color: $white;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: $transition-ease;
+    }
+
+    &:hover::before {
+      transform: scale(1);
+    }
+
+    img {
+      width: 50%;
+      z-index: 1;
+      transition: $transition-ease;
+    }
+
+    &:hover img {
+      @include filter-effect;
+    }
+  }
 }
 
 /* Banner CSS */
@@ -163,7 +273,7 @@ span.navbar-text {
 
   .tagline {
     font-weight: $font-weight-bold;
-    letter-spacing: 0.8px;
+    letter-spacing: $letter-spacing-default;
     padding: 9px 34px;
     background: $tagline-background;
     border: $border-light;
@@ -179,16 +289,16 @@ span.navbar-text {
   h1 {
     font-size: 65px;
     font-weight: $font-weight-bold;
-    letter-spacing: 0.8px;
+    letter-spacing: $letter-spacing-default;
     line-height: 1;
     margin-bottom: 20px;
     display: block;
   }
 
   p {
-    color: #b8b8b8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+    color: $text-grey;
+    font-size: $font-size-small;
+    letter-spacing: $letter-spacing-default;
     line-height: 1.5em;
     width: 96%;
   }
@@ -196,7 +306,7 @@ span.navbar-text {
   a {
     color: $white;
     font-weight: $font-weight-bold;
-    letter-spacing: 0.8px;
+    letter-spacing: $letter-spacing-default;
   }
 
   button {
@@ -204,11 +314,11 @@ span.navbar-text {
     color: $white;
     border: $border-light;
     padding: 9px 34px;
-    font-size: 18px;
+    font-size: $font-size-small;
     margin-left: 18px;
     position: relative;
     background-color: transparent;
-    transition: 0.3s ease-in-out;
+    transition: $transition-ease;
 
     span {
       z-index: 1;
@@ -223,7 +333,7 @@ span.navbar-text {
       left: 0;
       top: 0;
       z-index: -1;
-      transition: 0.3s ease-in-out;
+      transition: $transition-ease;
     }
 
     &:hover {
@@ -231,7 +341,7 @@ span.navbar-text {
 
       &::before {
         content: "";
-        width: 100%;
+        @include full-width;
         height: 100%;
         position: absolute;
       }
@@ -243,6 +353,7 @@ span.navbar-text {
     height: auto;
     border-radius: 2em;
     margin-top: 1em;
+    box-shadow: $image-box-shadow;
   }
 }
 
@@ -257,22 +368,22 @@ span.navbar-text {
   }
 
   p {
-    color: #b8b8b8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+    color: $text-grey;
+    font-size: $font-size-small;
+    letter-spacing: $letter-spacing-default;
     line-height: 1.5em;
     margin: 14px 0 33px 0;
   }
 
   h4 {
     font-size: 25px;
-    letter-spacing: 0.8px;
+    letter-spacing: $letter-spacing-default;
     line-height: 1.1em;
     margin: 14px 0 44px 0;
   }
 
   .skill-bx {
-    background: #151515;
+    background: $skill-bx-background;
     border-radius: 64px;
     text-align: center;
     padding: 60px 50px;
@@ -306,13 +417,13 @@ span.navbar-text {
   h3 {
     font-size: 30px;
     text-align: center;
-    letter-spacing: 0.8px;
+    letter-spacing: $letter-spacing-default;
   }
 
   p {
-    color: #b8b8b8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+    color: $text-grey;
+    font-size: $font-size-small;
+    letter-spacing: $letter-spacing-default;
     line-height: 1.5em;
     margin: 14px auto 30px auto;
     text-align: center;
@@ -325,7 +436,7 @@ span.navbar-text {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: $nav-pill-background;
   overflow: hidden;
 
   .nav-item {
@@ -337,12 +448,12 @@ span.navbar-text {
     border-radius: 0;
     padding: 17px 0;
     color: $white;
-    width: 100%;
+    @include full-width;
     font-size: 17px;
-    letter-spacing: 0.8px;
+    letter-spacing: $letter-spacing-default;
     font-weight: $font-weight-medium;
     position: relative;
-    transition: 0.3s ease-in-out !important;
+    transition: $transition-ease !important;
     text-align: center;
     z-index: 0;
 
@@ -355,7 +466,7 @@ span.navbar-text {
       top: 0;
       left: 0;
       z-index: -1;
-      transition: 0.3s ease-in-out !important;
+      transition: $transition-ease !important;
     }
 
     &.active::before {
@@ -363,13 +474,13 @@ span.navbar-text {
     }
 
     &.active {
-      border: 1px solid rgba(255, 255, 255, 1);
+      border: $nav-pill-border;
     }
   }
 
   #projects-tabs-tab-first {
     border: $border-light;
-    border-radius: 55px 0px 0px 55px;
+    border-radius: $first-pill-border-radius;
   }
 
   #projects-tabs-tab-second {
@@ -379,7 +490,7 @@ span.navbar-text {
 
   #projects-tabs-tab-third {
     border: $border-light;
-    border-radius: 0 55px 55px 0;
+    border-radius: $third-pill-border-radius;
   }
 }
 
@@ -389,10 +500,10 @@ span.navbar-text {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 24px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: $image-box-shadow;
 
   a {
-    color: rgba(255, 255, 255, 1);
+    color: $focus-color;
     font-size: large;
   }
 
@@ -401,9 +512,9 @@ span.navbar-text {
     background: $linear-gradient-background;
     opacity: 0.85;
     position: absolute;
-    width: 100%;
+    @include full-width;
     height: 0;
-    transition: 0.4s ease-in-out;
+    transition: $transition-ease;
   }
 
   &:hover {
@@ -428,17 +539,16 @@ span.navbar-text {
   text-align: center;
   top: 65%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
+  @include proj-txtx-animation;
   opacity: 0;
-  width: 100%;
+  @include full-width;
 
   h4 {
     text-align: center;
     align-items: center;
     font-size: 30px;
     font-weight: $font-weight-bold;
-    letter-spacing: 0.8px;
+    letter-spacing: $letter-spacing-default;
     line-height: 1.1em;
   }
 
@@ -446,7 +556,7 @@ span.navbar-text {
     font-style: italic;
     font-weight: $font-weight-book;
     font-size: 15px;
-    letter-spacing: 0.8px;
+    letter-spacing: $letter-spacing-default;
   }
 }
 
@@ -464,7 +574,7 @@ span.navbar-text {
   img {
     width: 88%;
     margin-bottom: 2em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: $image-box-shadow;
   }
 
   h2 {
@@ -476,20 +586,20 @@ span.navbar-text {
   form {
     input,
     textarea {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.1);
+      @include full-width;
+      background: $nav-pill-background;
       border: $border-light;
       border-radius: 20px;
       color: $white;
       margin: 0 0 8px 0;
       padding: 18px 26px;
       font-weight: $font-weight-medium;
-      font-size: 18px;
-      letter-spacing: 0.8px;
-      transition: 0.3s ease-in-out;
+      font-size: $font-size-small;
+      letter-spacing: $letter-spacing-default;
+      transition: $transition-ease;
 
       &:focus {
-        background: rgba(255, 255, 255, 1);
+        background: $focus-color;
         color: $background-color;
       }
 
@@ -511,12 +621,12 @@ span.navbar-text {
       border: 1px solid $white;
       background-color: $white;
       padding: 14px 48px;
-      font-size: 18px;
+      font-size: $font-size-small;
       margin-top: 25px;
       margin-bottom: 25px;
       border-radius: 0;
       position: relative;
-      transition: 0.3s ease-in-out;
+      transition: $transition-ease;
 
       span {
         z-index: 1;
@@ -536,11 +646,11 @@ span.navbar-text {
         top: 0;
         left: 0;
         z-index: 0;
-        transition: 0.3s ease-in-out;
+        transition: $transition-ease;
       }
 
       &:hover::before {
-        width: 100%;
+        @include full-width;
       }
     }
   }
@@ -564,7 +674,7 @@ span.navbar-text {
   p {
     font-weight: $font-weight-book;
     font-size: 14px;
-    color: #b8b8b8;
+    color: $text-grey;
     letter-spacing: 0.5px;
     margin-top: 20px;
   }
