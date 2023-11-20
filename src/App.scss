@@ -1,19 +1,21 @@
+@import "config";
+
 /* Custom Fonts */
 @font-face {
-  font-family: "Centra";
-  src: url("./assets/fonts/CentraNo2-Bold.ttf");
+  font-family: $font-family;
+  src: url($font-path-bold);
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "Centra";
-  src: url("./assets/fonts/CentraNo2-Medium.ttf");
+  font-family: $font-family;
+  src: url($font-path-medium);
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Centra";
-  src: url("./assets/fonts/CentraNo2-Book.ttf");
+  font-family: $font-family;
+  src: url($font-path-book);
   font-weight: 400;
 }
 
@@ -34,12 +36,12 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  background-image: url('./assets/images/background.jpg');
+  background-color: $background-color !important;
+  background-image: url($background-image);
   background-size: cover;
   background-attachment: fixed;
   color: #fff !important;
-  font-family: 'Centra', sans-serif !important;
+  font-family: $font-family, sans-serif !important;
   /* scrollbar-width: none;  */
 }
 
@@ -125,7 +127,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: $background-color;
 }
 
 nav.navbar a.navbar-brand {
@@ -145,12 +147,12 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
   font-size: 18px;
-  color: #121212 !important;
+  color: $background-color !important;
 }
 
 nav.navbar .nav-link.active {
   font-size: 18px;
-  color: #121212 !important;
+  color: $background-color !important;
 }
 
 span.navbar-text {
@@ -338,7 +340,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button:hover {
-  color: #121212;
+  color: $background-color;
 }
 
 .banner button:hover::before {
@@ -601,7 +603,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input:focus,
 .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
-  color: #121212;
+  color: $background-color;
 }
 
 .contact form input::placeholder,
@@ -613,7 +615,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact form input:focus::placeholder,
 .contact form textarea:focus::placeholder {
-  color: #121212;
+  color: $background-color;
   opacity: 0.8;
 }
 
@@ -642,7 +644,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: $background-color;
   width: 0;
   height: 100%;
   position: absolute;
