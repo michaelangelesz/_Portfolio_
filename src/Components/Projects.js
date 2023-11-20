@@ -14,7 +14,7 @@ export const Projects = () => {
       description:
         "The Movie Gallery is a MERN full-stack web app with full CRUD functionality.",
       link: (
-        <a href="https://my-movie-gallery.onrender.com" target="_blank">
+        <a href="https://my-movie-gallery.onrender.com" target="_blank" rel="noreferrer" >
           Check it out!
         </a>
       ),
@@ -26,7 +26,7 @@ export const Projects = () => {
       link: (
         <a
           href="https://github.com/michaelangelesz/Movie-Gallery"
-          target="_blank"
+          target="_blank" rel="noreferrer" 
         >
           Check the repo!
         </a>
@@ -40,7 +40,7 @@ export const Projects = () => {
       link: (
         <a
           href="https://michaelangelesz.github.io/Memory-Game/"
-          target="_blank"
+          target="_blank" rel="noreferrer" 
         >
           Play now!
         </a>
@@ -52,7 +52,7 @@ export const Projects = () => {
       description:
         "REST-rant is a MERN full-stack web app with full CRUD functionality.",
       link: (
-        <a href="https://rest-rant-0nmv.onrender.com/" target="_blank">
+        <a href="https://rest-rant-0nmv.onrender.com/" target="_blank" rel="noreferrer" >
           Check it out!
         </a>
       ),
@@ -64,7 +64,7 @@ export const Projects = () => {
       link: (
         <a
           href="https://github.com/michaelangelesz/project-REST-rant"
-          target="_blank"
+          target="_blank" rel="noreferrer" 
         >
           Check the repo!
         </a>
@@ -77,7 +77,7 @@ export const Projects = () => {
       link: (
         <a
           href="https://michaelangelesz.github.io/Memory-Albums/"
-          target="_blank"
+          target="_blank" rel="noreferrer" 
         >
           Play now!
         </a>
