@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap"
-import headerImg from "../assets/images/me2.jpeg"
+import headerImg from "../assets/images/me.jpeg"
 
 export const Banner = () => {
   return (
