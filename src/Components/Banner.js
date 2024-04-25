@@ -1,11 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap"
-import headerImg from "../assets/images/meAndOpahl.jpeg"
+import headerImg from "../assets/images/meSublime.jpeg"
 
 export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
+          <Col xs={12} md={6} xl={5}>
+                <div>
+                  <img src={headerImg} classname="astronaut" alt="Header Img" />
+                </div>
+          </Col>
           <Col xs={12} md={6} xl={7}>
                 <div>
                   <span className="tagline">✦ Mike M. Weisphal - Tarot Readings ✦</span>
@@ -27,11 +32,6 @@ export const Banner = () => {
                   </p>
                   <br />
                   <button type="button" onClick={() => window.open('https://www.linkedin.com/in/michael-m-weisphal/')}>LinkedIn</button>
-                </div>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-                <div>
-                  <img src={headerImg} classname="astronaut" alt="Header Img" />
                 </div>
           </Col>
         </Row>
