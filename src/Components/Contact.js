@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { MailchimpForm } from "./MailchimpForm"
-import contactImg from "../assets/images/contact-img.jpg"
+import contactImg from "../assets/images/meAndOpahl.jpeg"
 import "animate.css"
 
 export const Contact = () => {
