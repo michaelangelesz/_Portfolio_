@@ -3,7 +3,7 @@ import logo from "../assets/images/logo-lion.png"
 import linkedIn from "../assets/images/nav-icon-linkedin.svg"
 import github from "../assets/images/nav-icon-github.svg"
 import discord from "../assets/images/nav-icon-discord.svg"
-import facebook from "../assets/images/nav-icon-facebook.svg"
+// import facebook from "../assets/images/nav-icon-facebook.svg"
 
 export const Footer = () => {
   return (
@@ -20,7 +20,7 @@ export const Footer = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/michael-m-weisphal/" target="_blank" rel="noreferrer"><img src={linkedIn} alt="LinkedIn" /></a>
               <a href="https://github.com/michaelangelesz" target="_blank" rel="noreferrer"><img src={github} alt="Github" /></a>
-              <a href="https://www.facebook.com/mike.weisphal/" target="_blank" rel="noreferrer"><img src={facebook} alt="Facebook" /></a>
+              {/* <a href="https://www.facebook.com/mike.weisphal/" target="_blank" rel="noreferrer"><img src={facebook} alt="Facebook" /></a> */}
               <a href="https://discord.com/users/927145683662811157" target="_blank" rel="noreferrer">
                 <img src={discord} alt="Discord" />
               </a>
